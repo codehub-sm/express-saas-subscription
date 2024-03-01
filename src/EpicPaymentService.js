@@ -1,0 +1,1 @@
+class EpicPaymentService {\n    // ToDo: Implement the epic payment service logic here\n}\nmodule.exports = EpicPaymentService;
