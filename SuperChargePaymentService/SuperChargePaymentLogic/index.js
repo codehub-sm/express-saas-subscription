@@ -1,4 +1,4 @@
-// This is the EficPaymentLogic module which will contain the logic for processing payments.
+// This is the module which will contain the logic for processing payments.
 
 // Placeholder for payment processing logic
 function processPayment() {
@@ -6,4 +6,4 @@ function processPayment() {
 }
 
 // Export the payment processing logic
-aficPaymentLogic.processPayment = processPayment;
+SuperChargePaymentLogic.processPayment = processPayment;
