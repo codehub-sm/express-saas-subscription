@@ -1,4 +1,4 @@
-// This is the OmniPay gateway handler which will act as a central handler for various Gateway Plugins.
+// This is the gateway handler which will act as a central handler for various Gateway Plugins.
 
 // Placeholder for the gateway handler logic
 function handlePayment(gateway, paymentData) {
@@ -6,4 +6,4 @@ function handlePayment(gateway, paymentData) {
 }
 
 // Export the gateway handler logic
-OmniPay.handlePayment = handlePayment;
+SuperChargeGatewayWrapper.handlePayment = handlePayment;
