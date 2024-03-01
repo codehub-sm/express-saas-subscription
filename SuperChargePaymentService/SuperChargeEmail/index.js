@@ -1,4 +1,4 @@
-// This is the EpicEmail module which will interface with email services like Iterable.
+// This is the Email module which will interface with email services like Sendgrid/Iterable.
 
 // Placeholder for email sending logic
 function sendEmail() {
