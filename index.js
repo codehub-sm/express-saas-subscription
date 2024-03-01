@@ -4,7 +4,19 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => res.send('Hello World!'));
+// Simple mock database
+const subscriptions = [];
+
+// Create a new subscription
+app.post('/subscriptions', (req, res) => {
+    const { name, plan, expiry } = req.body;
+    const subscription = { id: subscriptions.length + 1, name, plan, expiry };
+    subscriptions.push(subscription);
+    res.json(subscription);
+});
+
+// List all subscriptions
+app.get('/subscriptions', (req, res) => res.json(subscriptions));
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`App listening on port ${PORT}`)});
+app.listen(PORT, function() { console.log(`App listening on port ${PORT}`)});
