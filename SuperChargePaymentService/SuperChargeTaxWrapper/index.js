@@ -1,4 +1,4 @@
-// This is the EpicTax module which will interface with Avalara for tax calculations.
+// This is the Tax module which will interface with Avalara for tax calculations.
 
 // Placeholder for tax calculation logic
 function calculateTax() {
@@ -6,4 +6,4 @@ function calculateTax() {
 }
 
 // Export the tax calculation logic
-aficTax.calculateTax = calculateTax;
+SuperChargeTax.calculateTax = calculateTax;
